@@ -26,7 +26,7 @@ jobs:
         # the suite cannot start its own mock registry.
         node: ['18', '20.18', 22]
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
       - uses: actions/setup-node@v7
         with:
           node-version: ${{ matrix.node }}
